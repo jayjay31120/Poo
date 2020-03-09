@@ -48,7 +48,7 @@ public class Popup implements Affiche {
 				if (Integer.parseInt(val)<121) {
 					ok = true;}
 				else {
-					System.out.println("le nombre doit être inférieur a 120");	
+					this.popup.showMessageDialog(null, "le nb doit etre < � 120", "Affiche", JOptionPane.INFORMATION_MESSAGE);	;	
 				}
 			} catch (Exception e) {
 				this.popup.showMessageDialog(null, "recommencer", "Affiche", JOptionPane.INFORMATION_MESSAGE);	
