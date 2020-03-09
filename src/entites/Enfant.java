@@ -25,7 +25,7 @@ public class Enfant extends Mineur {
 	
 	// polymorpisme
 	public String toString() {
-		return super.toString() + " " + (this.isVelo() ? " et j'ai un vÃ©lo" : " et je n'ai pas de vÃ©lo");
+		return super.toString() + " " + (this.isVelo() ? " et j'ai un vélo" : " et je n'ai pas de vélo");
 	}
 	
 	public String jouer() {

@@ -29,7 +29,7 @@ public class Majeur extends Personne {
 	}
 	// polymorpisme
 	public String toString() {
-		return super.toString() + " " + (this.isVote() ? " je vote" : " je ne vote pas");
+		return super.toString() + " " + (this.isVote() ? " je  vote" : " je ne vote pas");
 	}
 
 	public String travailler() {

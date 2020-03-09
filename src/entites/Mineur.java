@@ -26,7 +26,7 @@ public abstract class Mineur extends Personne{
 	}
 	// polymorpisme
 	public String toString() {
-		return super.toString() + " je vais Ã  l'Ã©cole " + this.getEcole();
+		return super.toString() + " je vais à  l'école " + this.getEcole();
 	}
 	
 	// methode abstraite

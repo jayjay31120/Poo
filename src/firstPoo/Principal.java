@@ -4,6 +4,8 @@ package firstPoo;
 
 
 
+import javax.swing.JOptionPane;
+
 import entites.Ado;
 import entites.Enfant;
 import entites.Majeur;
@@ -39,13 +41,52 @@ public class Principal {
 		//		Mineur min = new Mineur("Duran","Kevin",10,"Victor Hugo");
 		//		System.out.println(min.toString());
 
-
-
-		
-		
-		
-		
 		//Affichage aff = new Affichage();
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		Popup aff = new Popup();
 		// instance de Personne
 		Personne unePersonne = new Personne();
@@ -57,9 +98,9 @@ if (age>=18) {
 	unMaj.setAge(age);
 	unMaj.setNom(aff.saisir("Saisir votre nom : "));
 	aff.afficher(unMaj.getNom());
-	unMaj.setPrenom(aff.saisir("Saisir votre prï¿½nom : "));
+	unMaj.setPrenom(aff.saisir("Saisir votre prénom : "));
 	
-	unMaj.setVote(aff.saisirBool("votez vous?"));
+	unMaj.setVote(aff.saisirBool("votez vous????"));
 	
 	aff.afficher(unMaj.toString());
 		}
@@ -67,10 +108,10 @@ else if (age<=12){
 	enf.setAge(age);
 	enf.setNom(aff.saisir("Saisir votre nom : "));
 	aff.afficher(enf.getNom());
-	enf.setPrenom(aff.saisir("Saisir votre prï¿½nom : "));
-	enf.setEcole(aff.saisir("Quelle est ton Ã©cole : "));
+	enf.setPrenom(aff.saisir("Saisir votre prénom : "));
+	enf.setEcole(aff.saisir("Quelle est ton école : "));
 	
-	enf.setVelo(aff.saisirBool("As tu un vÃ©lo"));
+	enf.setVelo(aff.saisirBool("As tu un vélo"));
 	
 	aff.afficher(enf.toString());
 	
@@ -79,8 +120,8 @@ else {
 	adoo.setAge(age);
 	adoo.setNom(aff.saisir("Saisir votre nom : "));
 	aff.afficher(adoo.getNom());
-	adoo.setPrenom(aff.saisir("Saisir votre prï¿½nom : "));
-	adoo.setEcole(aff.saisir("Quelle est ton Ã©cole : "));
+	adoo.setPrenom(aff.saisir("Saisir votre prénom : "));
+	adoo.setEcole(aff.saisir("Quelle est ton école : "));
 	adoo.setPortable(aff.saisirBool("as tu un portable"));
 	aff.afficher(adoo.toString());
 }

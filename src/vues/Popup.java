@@ -59,28 +59,51 @@ public class Popup implements Affiche {
 	
 	@SuppressWarnings("static-access")
 	@Override
-	public boolean saisirBool(String msg) {
-		
-		String val = "";
-		boolean vall = Boolean.valueOf(val);
-	
-	boolean ok = false;
-	
-	do {
-		try {
-			
-			val = this.popup.showInputDialog(null, msg, "Saisie", JOptionPane.QUESTION_MESSAGE);
-			if (vall == true || vall == false  ) {
-				ok = true;}
-			else {
-				this.popup.showMessageDialog(null, "recommencer", "Affiche", JOptionPane.INFORMATION_MESSAGE);
-			}
-		} catch (Exception e) {
-			this.popup.showMessageDialog(null, "recommencer", "Affiche", JOptionPane.INFORMATION_MESSAGE);	
-		}
-	} while (ok == false);
 
-		return vall;
+	public boolean saisirBool(String msg) {
+		boolean reponse;
+	    String[] sexe = {"OUI", "NON"};
+	    JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
+	    int rang = jop.showOptionDialog(null, 
+	     msg,
+	      "Question !",
+	      JOptionPane.YES_NO_CANCEL_OPTION,
+	      JOptionPane.QUESTION_MESSAGE,
+	      null,
+	      sexe,
+	      sexe[1]);
+	    
+	    
+	    if (rang==1) {
+	    	
+	    } reponse = false;
+	    
+   if (rang==0) {
+	    	
+	    } reponse = true;
+	    
+	    
+//		String val = "";
+//		boolean vall = Boolean.valueOf(val);
+//	
+//	boolean ok = false;
+//	
+//	do {
+//		try {
+//			
+//			val = this.popup.showInputDialog(null, msg, "Saisie", JOptionPane.QUESTION_MESSAGE);
+//			if (vall == true || vall == false  ) {
+//				ok = true;}
+//			else {
+//				this.popup.showMessageDialog(null, "recommencer", "Affiche", JOptionPane.INFORMATION_MESSAGE);
+//			}
+//		} catch (Exception e) {
+//			this.popup.showMessageDialog(null, "recommencer", "Affiche", JOptionPane.INFORMATION_MESSAGE);	
+//		}
+//	} while (ok == false);
+//
+//		return vall;
+		return reponse;
 	}
 
 	
