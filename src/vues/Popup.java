@@ -45,7 +45,7 @@ public class Popup implements Affiche {
 			try {
 				
 				val = this.popup.showInputDialog(null, "quel est ton age", "Saisie", JOptionPane.QUESTION_MESSAGE);
-				if (Integer.parseInt(val)<121) {
+				if (Integer.parseInt(val)<121 && Integer.parseInt(val)>0) {
 					ok = true;}
 				else {
 					this.popup.showMessageDialog(null, "le nb doit etre < à 120", "Affiche", JOptionPane.INFORMATION_MESSAGE);	;	
@@ -61,9 +61,9 @@ public class Popup implements Affiche {
 	@Override
 
 	public boolean saisirBool(String msg) {
-		boolean reponse;
+		boolean reponse = false;
 	    String[] sexe = {"OUI", "NON"};
-	    JOptionPane jop = new JOptionPane(), jop2 = new JOptionPane();
+	    JOptionPane jop = new JOptionPane();
 	    int rang = jop.showOptionDialog(null, 
 	     msg,
 	      "Question !",
@@ -73,14 +73,14 @@ public class Popup implements Affiche {
 	      sexe,
 	      sexe[1]);
 	    
-	    
-	    if (rang==1) {
+	    System.out.println(rang);
+	    if (rang==1) {reponse = false;
 	    	
-	    } reponse = false;
+	    } 
 	    
-   if (rang==0) {
+	    else if (rang==0) {reponse = true;
 	    	
-	    } reponse = true;
+	    } 
 	    
 	    
 //		String val = "";
